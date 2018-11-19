@@ -1,0 +1,25 @@
+{% extends 'examen/post_list.html' %}
+{% block content %}
+<br>
+<br>
+<h1>Materias</h1>
+<a  class="btn btn-outline-primary" href=""> Nuevo </a>
+<table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">Materia</th>
+        <th scope="col">Credito</th>
+        <th scope="col">Profesor</th>
+      </tr>
+    </thead>
+        {% for materias in materia %}
+        <tr class="table-active">
+
+            <td>{{ materias.materia }} </td>
+            <td>{{ materias.creditos }}</td>
+            <td>{{ materias.profesor }}</td>
+            <td><a class="badge badge-success" href=""> Ver </a> </td>
+          </tr>
+        {% endfor %}
+</table>
+{% endblock %}
