@@ -25,7 +25,10 @@
                         {% if user.is_authenticated %}
 
                         <li class="nav-item">
-                            <a class="nav-link" href="" ><span class="glyphicon glyphicon-list">Nueva Materia</span></a>
+                            <a class="nav-link" href="{%url 'crear_materia'%}" ><span class="glyphicon glyphicon-list">Nueva Materia</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{%url 'listar_grados'%}" ><span class="glyphicon glyphicon-list">Grados</span></a>
                         </li>
                         <a class="nav-link"> Bienvenido {{ user.username }} <a nav-link href="">Log out</a></a>
                         {% else %}

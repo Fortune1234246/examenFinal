@@ -1,0 +1,27 @@
+{% extends 'examen/post_list.html' %}
+{% block content %}
+<div class="container">
+  <h1>Lista de eventos <a href="" class="btn btn-success">Nuevo</a></h1>
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col">grado</th>
+            <th scope="col">seccion</th>
+            <th scope="col">encargado</th>
+            <th scope="col">materias</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for ventas in venta %}
+          <tr class="table-active">
+            <th>{{ventas.grado}}</th>
+            <th>{{ventas.seccion}}</th>
+            <th>{{ventas.encargado}}</th>
+            <th>{{ventas.materias}}</th>
+
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+</div>
+{% endblock %}

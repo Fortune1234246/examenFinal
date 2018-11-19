@@ -9,4 +9,6 @@ from . import views
 urlpatterns = [
     #url(r'^$', views.lista_peliculas, name ='lista_peliculas'),
     url(r'^materia/listar/$', views.listar_materia, name='listar_materia'),
+    url(r'^materia/new/$', views.crear_materia, name='crear_materia'),
+    url(r'^grados/listar/$', views.listar_grados, name='listar_grados'),
     ]
