@@ -30,6 +30,9 @@
                         <li class="nav-item">
                             <a class="nav-link" href="{%url 'listar_grados'%}" ><span class="glyphicon glyphicon-list">Grados</span></a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{%url 'grados_new'%}" ><span class="glyphicon glyphicon-list">agregar Grados</span></a>
+                        </li>
                         <a class="nav-link"> Bienvenido {{ user.username }} <a nav-link href="">Log out</a></a>
                         {% else %}
                         <a href="{% url 'login' %}" class="top-menu"><span class="glyphicon glyphicon-lock">Login</span></a>

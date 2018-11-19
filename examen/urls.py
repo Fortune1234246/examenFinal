@@ -11,4 +11,5 @@ urlpatterns = [
     url(r'^materia/listar/$', views.listar_materia, name='listar_materia'),
     url(r'^materia/new/$', views.crear_materia, name='crear_materia'),
     url(r'^grados/listar/$', views.listar_grados, name='listar_grados'),
+    url(r'^grados/new/$', views.grados_new, name='grados_new'),
     ]
